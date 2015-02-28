@@ -1,0 +1,161 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 19:04:26 Aug 7, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:59:32 Feb 28, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* Common Print CSS for all skins. Copyright 2006-2010 Internet Matrix, Inc. */
+
+body#print_page {
+  margin: 0.5in;
+}
+
+@media print {
+    div[id="print_options"] {display:none;}
+}
+
+@media screen {
+    div[id="print_options"] {position:absolute; top:20px; right:0.5in;}
+    div[id="print_options"] a {background:url(/web/20130807190426/http://agapevet.net/css/skins/global/images/vertical_sprite.png?v=4.12.6.40) no-repeat 0 -1900px; color:#000; display:inline-block; margin-left:10px; padding-left:20px; line-height:16px; text-decoration:none;}
+    div[id="print_options"] a + a {background-position:0 -2000px;}
+}
+
+@media print, screen {
+
+    /* ---------- global styles   ---------- */
+
+    * {font-family:Arial, Helvetica, sans-serif; font-size:10pt; line-height:15pt;}
+    h1 {font-size:14pt;}
+    h2 {font-size:13pt;}
+    h3 {font-size:12pt;}
+    h4 {font-size:11pt;}
+    h5 {font-size:10pt;}
+    h6 {font-size:10pt;}
+    a {color:#000; text-decoration:none;}
+
+    div[class^="clear"] {clear:both;}
+
+    header[id="sHead"],
+    header[id="pHead"],
+    footer[id="sFoot"],
+    footer[id="pFoot"],
+    nav[id="sNav"],
+    div[id^="status"],
+    div[id="header"],
+    div[id="banner"],
+    div[id^="custom_"],
+    div[id^="bread"],
+    div[id="itools"],
+    div[id="community_content"],
+    div[id="member_content"],
+    div[id*="login"],
+    div[id*="logout"],
+    div[id^="newsletter_"],
+    div[id$="_simulator"],
+    div[id="page_options"],
+    div[id^="footer"] *,
+    div[id^="skin_"],
+    div[id$="_chat"],
+    div[id$="_controls"],
+    div[id$="_sublinks"],
+    section[class^="custom_content"],
+    *[class^="toggle"],
+    *[class^="target"],
+    *[id$="blog_archive"],
+    form,
+    a[class*="pdf"],
+    a[class*="reader"],
+    a[class*="view"],
+    a[title^="Register"],
+    a[class="top"],
+    a[id$="_selector"] {display:none;}
+
+
+    /* ---------- begin legacy styles - DO NOT REMOVE ---------- */
+
+
+    span[class="left"] {float:left; margin-right:0.25in;}
+    span[class="right"] {float:right; margin-left:0.25in;}
+    span[class="img-left"] {display:block; margin-right:0.125in; padding-bottom:0.125in; float:left;}
+    span[class="img-right"] {display:block; margin-left:0.125in; padding-bottom:0.125in; float:right;}
+    div[id$="_column"] span[class="img-left"] p,
+    div[id$="_column"] span[class="img-right"] p {margin-top:0.125in; font-size:10pt;}
+
+
+    /* ---------- begin captions ---------- */
+
+
+    div[class="caption_left"] {margin-right:0.25in; width:200px; float:left;}
+    div[class="caption_right"] {margin-left:0.25in; width:200px; float:right;}
+    div[id$="_column"] div[class="caption_left"] p,
+    div[id$="_column"] div[class="caption_right"] p {margin:0; padding-top:0.125in; line-height:12pt; font-size:8pt; font-weight:bold;}
+
+
+    /* ---------- begin featured articles ---------- */
+
+
+    div[class="article"] {padding-right:5%; width:45%; float:left;}
+    div[class="article"] img {margin-right:10px; width:75px; height:75px; float:left;}
+    div[class="article"] img + a {font-weight:bold;}
+
+
+    /* ---------- begin google map & directions ---------- */
+
+
+    div[id="map"] {width:100%; height:320px;}
+    div[id="directions"] {margin:0 -5px;}
+    div[id="bottom_controls"] {position:absolute; visibility:hidden;}
+    table[class="adp-directions"] {width:100%;}
+
+
+    /* ---------- begin office hours ---------- */
+
+
+    table[id^="office"] {border-collapse:collapse; width:100%;}
+    table[id^="office"] td {border:1px solid #000; padding:20px; text-align:center;}
+    table[id^="office"] td[class="days"] {width:20%;}
+    table[id^="office"] td[class="hours"] {width:40%;}
+    table[id^="office"] thead td[class$="s"],
+    table[id^="office"] thead:hover td[class$="s"] {font-weight:bold;}
+
+
+    /* ---------- begin calender ---------- */
+
+
+    div[id*="_calendar_nav"],
+    div[id*="calendar_opt"] a,
+    table[id$="_calendar"] td div,
+    table[id$="_calendar"] + * {display:none;}
+
+    div[id*="calendar_opt"] {margin-bottom:0.25in; font-size:14pt; font-weight:bold; text-align:center;}
+
+    table[id$="_calendar"] {border-collapse:collapse; width:100%;}
+    table[id$="_calendar"] tr[class="days"] td {font-weight:bold; height:0.5in;}
+    table[id$="_calendar"] td {border:1px solid #000; width:14.28%; height:1in;}
+    table[id$="_calendar"] td p {margin:0; height:0.25in; line-height:0.25in; font-size:10pt; text-align:center;}
+    table[id$="_calendar"] td p[class="date"] {border-bottom:1px solid #000;}
+    table[id$="_calendar"] td p[class^="event_"] {border:1px solid #000; margin:0.25in auto; width:0.25in;}
+
+
+    /* ---------- begin page options print page ---------- */
+
+
+    div[id="print_content"] {border-top:1px dotted #616265; border-bottom:1px dotted #616265; margin:0.25in 0; padding:0.25in 0;}
+
+    div[id="print_content"] h1,
+    div[id="print_content"] h2 {
+        text-align: center;
+    }
+
+    div.slideshow_attraction {display: none !important;}
+
+    div#lead_video_attraction {display: none !important;}
+
+}
